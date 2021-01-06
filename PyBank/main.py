@@ -39,28 +39,17 @@ with open (budget_data_csv, 'r') as csvfile:
 
 
     final_avg = sum(average_change[1:])/(len(average_change)-1)
-    #print(total_months)
-    print(len(date))
-    print(average_profit)
-   # print(average_change)
+   
+    print('Financial Analysis')
+    print('----------------------')
+    print(len(date))    
+    print('Total: $' + str(average_profit))
     print(round(final_avg,2))
     print(least_profits[0],least_profits[1])
     print(greatest_profits[0],greatest_profits[1])
 
 
-    # when row =1
-    # change  = 867884 - 0
-    # average_change.append(867884)
-    # previous = 867884
    
-    # when r0w =2
-    # chnage = 984655-867884 =11167
-    # average_change.append(change)
-    # previous = 984655
-
-
-
-    # until row =86
 
 
 
