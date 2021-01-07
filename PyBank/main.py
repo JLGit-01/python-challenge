@@ -53,10 +53,11 @@ with open (budget_data_csv, 'r') as csvfile:
     print(f"Greatest Increase In Profits: {greatest_profits[0]} (${greatest_profits[1]})")
     print(f"Greatest Decrease In Profits: {least_profits[0]} (${least_profits[1]})")
     
-
+output_file = os.path.join('Analysis','budget_data.csv')
 
    
-
+with open(output_file, "w",newline="") as datafile:
+    writer = csv.writer(datafile)
 
 
 
