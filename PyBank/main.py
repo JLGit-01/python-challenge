@@ -42,11 +42,12 @@ with open (budget_data_csv, 'r') as csvfile:
    
     print('Financial Analysis')
     print('----------------------')
-    print(len(date))    
+    print(f"Total Months: {len(date)}")
     print('Total: $' + str(average_profit))
-    print(round(final_avg,2))
-    print(least_profits[0],least_profits[1])
-    print(greatest_profits[0],greatest_profits[1])
+    print(f"Average Change:  ${round(final_avg,2)}")
+    print(f"Greatest Increase In Profits: {greatest_profits[0]} (${greatest_profits[1]})")
+    print(f"Greatest Decrease In Profits: {least_profits[0]} (${least_profits[1]})")
+    
 
 
    
